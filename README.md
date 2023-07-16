@@ -197,7 +197,7 @@ PART B: REMOTE DESKTOP INTO WINDOWS VIRTUAL MACHINE AND OBSERVE ICMP TRAFFIC
 <img src="https://i.ibb.co/pnCWy5F/More-Choices.jpg"/>
 </p>
 <p>
-21). Go to More Choices to use a different account to log in with. 
+21).Go to More Choices to use a different account to log in with. 
 </p>
 <br />
 
