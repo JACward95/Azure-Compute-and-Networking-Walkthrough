@@ -8,7 +8,7 @@ This tutorial outlines the prerequisites and installation two virtual machines a
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: Walkthrough on Azure Compute and Networking](https://www.youtube.com)
+- ### [YouTube: Walkthrough on Azure Compute and Networking](https://www.youtube.com/watch?v=eGK_mVi5U-A)
 
 <h2>Environments and Technologies Used</h2>
 
