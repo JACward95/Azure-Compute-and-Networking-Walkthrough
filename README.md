@@ -422,7 +422,7 @@ PART C: OBSERVING SSH TRAFFIC
 <img src="https://i.ibb.co/tZVHTMg/take-note-you-are-in-linux-vm-ssh.jpg"/>
 </p>
 <p>
-49). We have no successfully SSH'ed into Linux VM. 
+49). We have now successfully SSH'ed into Linux VM. 
 </p>
 <br />
 
