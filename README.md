@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://imgur.com/RINPRvR" alt="Azure logo"/>
+<img src="https://github.com/JACward95/ostickets-prereq/blob/main/microsoft-azure7662.jpg" alt="Azure logo"/>
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
