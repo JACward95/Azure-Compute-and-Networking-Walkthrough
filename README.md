@@ -59,7 +59,7 @@ PART A: CREATING OUR RESOURCES IN MICROSOFT AZURE
 <img src="https://i.ibb.co/Fzdbzgj/RG-Name-and-Create.jpg"/>
 </p>
 <p>
-4). We're going name is resource group 'lab' here, but you can chose whatever you like. Then we will click create.
+4). We will name the resource group 'lab' here, but you can chose whatever you like. Then we will click create.
 </p>
 <br />
 
