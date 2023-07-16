@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This tutorial outlines the prerequisites and installation two virtual machines and how they can communicate with each other.<br />
 
 
 <h2>Video Demonstration</h2>
@@ -22,11 +22,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Windows 10 OS
+- Microsoft Azure Account (Free or Pay-As-You-Go)
+- Internet Connection
 
 <h2>Installation Steps</h2>
 
