@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://imgur.com/a/cqRsj8b" alt="Azure logo"/>
+<img src="<blockquote class="imgur-embed-pub" lang="en" data-id="a/cqRsj8b"  ><a href="//imgur.com/a/cqRsj8b">azure </a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>" alt="Azure logo"/>
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
