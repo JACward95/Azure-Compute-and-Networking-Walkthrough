@@ -550,6 +550,6 @@ PART G: CLEAN UP YOUR AZURE AND DELETE RESOURCES
 <img src="https://i.ibb.co/0sX2b93/hooray-we-re-done.jpg"/>
 </p>
 <p>
-64). Wait for to delete just to be sure. Now we are finished! Thank you for taking the time to read this walkthrough and I hope it was in some way helpful to you. 
+64). Wait for everything to delete just to be sure. Now we are finished! Thank you for taking the time to read this walkthrough and I hope it was in some way helpful to you. 
 </p>
 <br />
