@@ -330,215 +330,226 @@ PART B: REMOTE DESKTOP INTO WINDOWS VIRTUAL MACHINE AND OBSERVE ICMP TRAFFIC
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/G2DQ6TR/take-note-of-perpetual-ping-in-wireshark.jpg"/>
 </p>
 <p>
-
+38). Take a look at Wireshark and see how they just keep going. This will go on forever if we want it to. Let's take a look at how we could interrupt this process. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/9TrYZD6/back-in-linux-vm-go-to-networking-tab.jpg"/>
 </p>
 <p>
+39). Go back to our normal desktop and we should still be in our Linux Vm information in Azure. Go over to Networking and click on that.  </p>
+<br />
 
+<p>
+<img src="https://i.ibb.co/r6z39m9/go-to-add-inbound-port-rule.jpg"/>
+</p>
+<p>
+40). Click on 'Add Inbound Port Rule'
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/r2jXpsT/icmp-and-deny.jpg"/>
 </p>
 <p>
-
+41). Don't worry about the top portions, just click the box for ICMP and then Deny, then click Add. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/PQv7kRt/take-note-of-denied-access-in-cmd-and-wireshark.jpg"/>
 </p>
 <p>
-
+42). Go back to our remote desktop connection and observe the results. See how the request is timing out? We just denied our Linux VM from being reached by ICMP from another IP address. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/09PhJcT/go-back-to-linux-vm-inbound-rule.jpg"/>
 </p>
 <p>
-
+43). Now that we've observed that, go back to the normal desktop and back into the rule that we just made. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/FqFprZj/click-allow-and-save.jpg"/>
 </p>
 <p>
-
+44). Check 'allow' and save.
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/xSzpS9q/take-note-that-it-is-back-in-working-order-for-ping.jpg"/>
 </p>
 <p>
-
+45). Observe now how we have allowed communication to come back into the fold between these two machines. The requests are no longer timing out and we can see plenty of packets.
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/R7TVmPR/click-ctrl-c-to-stop-the-ping-t.jpg"/>
 </p>
 <p>
+46). To stop this process, go into command prompt and on your keyboard hit 'Ctrl+C' to stop this pinging. 
+</p>
+<br />
 
+PART C: OBSERVING SSH TRAFFIC
+
+<p>
+<img src="https://i.ibb.co/2y8xc4d/filter-for-ssh.jpg"/>
+</p>
+<p>
+47). Go into Wireshark and like we filtered for ICMP before, we will now filter for SSH traffic.
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/9p06kRp/ssh-then-yes-then-linux-vm-password.jpg"/>
 </p>
 <p>
-
+48). Go into the command prompt and type 'ssh x.x.x.x' (Linux Private IP). Then type yes to SSH into the Linux machine. Now, you'll need to type in the password that we created for the Linux machine (it should be the same as windows vm if you chose to do that). 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/tZVHTMg/take-note-you-are-in-linux-vm-ssh.jpg"/>
 </p>
 <p>
-
+49). We have no successfully SSH'ed into Linux VM. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/prt8s8F/take-note-that-the-source-is-linux-vm.jpg"/>
 </p>
 <p>
-
+50). Take note of the traffic in Wireshark. See how now the source is coming from the Linux private IP rather than the Windows VM. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/0tHNDsM/type-in-linux-commands.jpg"/>
 </p>
 <p>
-
+51). Type in a few Linux commands like 'hostname' or 'pwd' and you can see it will work. In Wireshark as well you'll see the traffic happen from the Linux VM. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/5kvZP2j/exit-out-of-linux-vm.jpg"/>
 </p>
 <p>
-
-</p>
-<br />
-<p>
-<img src=""/>
-</p>
-<p>
-
+52). We can now stop this by typing exit and now we are back into making commands for the Windows VM.
 </p>
 <br />
 
+PART D: OBSERVE DHCP TRAFFIC
+
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/3sygmzC/filter-for-DHCP.jpg"/>
 </p>
 <p>
-
+53). Just as before, we will go into Wireshark and filter for DHCP Traffic. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/cCRzmYD/ipconfig-renew.jpg"/>
 </p>
 <p>
-
+54). Go into command prompt and type in 'ipconfig /renew' and observe the effects in Wireshark.
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/dprtpTC/take-note-of-new-IP.jpg"/>
 </p>
 <p>
+55). Thanks to this protocol, we now have a new public IP address. 
+</p>
+<br />
 
+PART E: OBSERVE DNS TRAFFIC
+
+<p>
+<img src="https://i.ibb.co/ssNJcWk/filter-for-dns.jpg"/>
+</p>
+<p>
+56). Same as before, we will now filter for DNS Traffic in Wireshark. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/YQWKW3m/nslookup-for-google.jpg"/>
 </p>
 <p>
-
+57). Go into command prompt and type in 'nslookup www.google.com' or whatever popular website of your choosing. Observe the results and see that we can see the Public IP address of this website. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/qpgwfMK/take-note-of-nslookup-wireshark-data.jpg"/>
 </p>
 <p>
+58). The same goes for Wireshark, see how the packets were sent for DNS, and if you scroll over you can see the website you chose in the detailed information as well. 
+</p>
+<br />
 
+PART F: OBSERVE RDP TRAFFIC
+
+<p>
+<img src="https://i.ibb.co/7njK7Sv/filter-for-RDP-and-take-note-of-neverending-traffic.jpg"/>
+</p>
+<p>
+59). Same as before, go into Wireshark and filter for RDP traffic by typing 'tcp.port==3389'. Now take note of the traffic. It is constantly happening without is doing anything. This is because this port shows constant live traffic between two computers. 
+</p>
+<br />
+
+PART G: CLEAN UP YOUR AZURE AND DELETE RESOURCES
+
+<p>
+<img src="https://i.ibb.co/KD51C7r/close-out-of-WINVM.jpg"/>
+</p>
+<p>
+60). Click out of the Remote Desktop Connection. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/mhYRRQt/go-back-to-portal-and-go-to-lab-RG.jpg"/>
 </p>
 <p>
-
+61). At the main portal page, go to the lab Resource group we created. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/6sHF7pZ/delete-resource-group.jpg"/>
 </p>
 <p>
-
+62). Click on Delete Resource Group.
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/k1YKpzH/apply-force-delete-and-delete.jpg"/>
 </p>
 <p>
-
+63). Be sure to check that box at the bottom so this also takes care of your virtual machines. Type the name of the resource group and delete. 
 </p>
 <br />
 
 <p>
-<img src=""/>
+<img src="https://i.ibb.co/0sX2b93/hooray-we-re-done.jpg"/>
 </p>
 <p>
-
+64). Wait for to delete just to be sure. Now we are finished! Thank you for taking the time to read this walkthrough and I hope it was in some way helpful to you. 
 </p>
 <br />
-
-<p>
-<img src=""/>
-</p>
-<p>
-
-</p>
-<br />
-
-<p>
-<img src=""/>
-</p>
-<p>
-
-</p>
-<br />
-
-<p>
-<img src=""/>
-</p>
-<p>
-
-</p>
-<br />
-
-
-
-
-
-
-
