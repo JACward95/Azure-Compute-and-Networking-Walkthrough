@@ -2,13 +2,13 @@
 <img src="https://github.com/JACward95/ostickets-prereq/blob/main/microsoft-azure7662.jpg" alt="Azure logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
+<h1>Azure Compute and Networking - Prerequisites and Installation</h1>
 This tutorial outlines the prerequisites and installation two virtual machines and how they can communicate with each other.<br />
 
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+- ### [YouTube: Walkthrough on Azure Compute and Networking](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
