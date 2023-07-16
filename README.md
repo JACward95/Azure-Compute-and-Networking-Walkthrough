@@ -29,11 +29,11 @@ This tutorial outlines the prerequisites and installation two virtual machines a
 <h2>The In Depth Walkthrough!</h2>
 
 <p>
-<img src="https://ibb.co/h7N3T86"/>
+<img src="https://i.ibb.co/bWVcGd0/portal-for-azure.jpg"/>
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1). We will first start in the main portal for Microsoft Azure.
 </p>
 <br />
 
