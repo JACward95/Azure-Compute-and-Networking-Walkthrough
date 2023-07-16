@@ -29,7 +29,7 @@ This tutorial outlines the prerequisites and installation two virtual machines a
 <h2>The In Depth Walkthrough!</h2>
 
 <p>
-<img src="
+<img src="https://ibb.co/h7N3T86"/>
 
 </p>
 <p>
